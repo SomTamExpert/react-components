@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import MyAlert from './components/alerts_dismissible';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ExampleToastsDismissible from "./components/toasts_dismissible";
+import ExampleToastsStacking from "./components/toasts_stacking";
+import ExampleToastsPlacement from "./components/toasts_placement";
+import ExampleToastsAutohide from "./components/toasts_autohide";
+import ExampleToastsContextualVariations from "./components/toasts_contextual_variations";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            {/*<MyAlert/>*/}
+            <ExampleToastsDismissible/>
+            <ExampleToastsStacking/>
+            <ExampleToastsPlacement/>
+            <ExampleToastsAutohide/>
+            <ExampleToastsContextualVariations/>
+        </div>
+    );
 }
 
 export default App;
+
